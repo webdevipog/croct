@@ -20,5 +20,42 @@
         }
       }
     }
+  ],
+  "sobre-empresa": [
+    {
+      "version": 1,
+      "content": {
+        "pt-br": {
+          "_component": "sobre-empresa-page@1",
+          "titulo": "Sobre Nossa Empresa",
+          "subtitulo": "Inovação e excelência em cada projeto",
+          "descricao": "Somos uma empresa dedicada a criar soluções tecnológicas inovadoras que transformam a maneira como as pessoas interagem com a tecnologia. Com uma equipe experiente e apaixonada por desafios, desenvolvemos produtos que fazem a diferença no mercado e na vida dos nossos clientes.",
+          "features": [
+            {
+              "titulo": "Inovação",
+              "descricao": "Sempre buscamos as tecnologias mais avançadas para criar soluções únicas",
+              "icone": "🚀"
+            },
+            {
+              "titulo": "Qualidade", 
+              "descricao": "Nossos produtos passam por rigorosos testes de qualidade",
+              "icone": "✨"
+            },
+            {
+              "titulo": "Suporte",
+              "descricao": "Oferecemos suporte completo em todas as etapas do projeto",
+              "icone": "🤝"
+            }
+          ],
+          "chamadaAcao": {
+            "titulo": "Pronto para começar seu projeto?",
+            "botao": {
+              "texto": "Entre em Contato",
+              "url": "/contato"
+            }
+          }
+        }
+      }
+    }
   ]
 }
