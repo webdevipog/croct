@@ -58,41 +58,13 @@ type Def$7f15019b = {
   },
 };
 
-/**
- * Sobre empresa page
- * 
- * The structure for about company pages.
- */
-type Def$sobre = {
-  'titulo': string,
-  'subtitulo': string,
-  'descricao': string,
-  'features': Array<{
-    'titulo': string,
-    'descricao': string,
-    'icone': string,
-  }>,
-  'chamadaAcao': {
-    'titulo': string,
-    'botao': {
-      'texto': string,
-      'url': string,
-    },
-  },
-};
-
 declare module '@croct/plug/slot' {
   type Next15HomepageV2 = Def$7f15019b & {'_component': 'next15-starter-page@3' | null};
-  type SobreEmpresaV1 = Def$sobre & {'_component': 'sobre-empresa-page@1' | null};
   
   export interface VersionedSlotMap {
     'next15-homepage': {
       latest: Next15HomepageV2,
       '2': Next15HomepageV2,
-    };
-    'sobre-empresa': {
-      latest: SobreEmpresaV1,
-      '1': SobreEmpresaV1,
     };
   }
 }
