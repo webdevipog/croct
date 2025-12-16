@@ -11,7 +11,8 @@
   ],
   "defaultLocale": "pt-br",
   "slots": {
-    "next15-homepage": "2"
+    "next15-homepage": "2",
+    "sobre-empresa": "1"
   },
   "components": {},
   "paths": {
