@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.croct.com/json/v1/project.json",
+  "organization": "ipog-4216",
+  "workspace": "ipog",
+  "applications": {
+    "development": "website-dev",
+    "production": "website-prod"
+  },
+  "locales": [
+    "pt-br"
+  ],
+  "defaultLocale": "pt-br",
+  "slots": {
+    "next15-homepage": "1"
+  },
+  "components": {},
+  "paths": {
+    "source": ".",
+    "utilities": "lib",
+    "components": "components",
+    "examples": "app",
+    "content": "."
+  }
+}

@@ -6,9 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "croct --no-interaction install"
   },
   "dependencies": {
+    "@croct/content": "^1.1.0",
+    "@croct/md-lite": "^0.3.1",
+    "@croct/plug-next": "^0.7.0",
+    "@croct/template-ui": "^0.2.1",
     "next": "16.0.10",
     "react": "19.2.1",
     "react-dom": "19.2.1"
@@ -18,6 +23,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "croct": "^0.11.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.10",
     "tailwindcss": "^4",

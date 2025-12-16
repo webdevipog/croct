@@ -1,65 +1,125 @@
-import Image from "next/image";
+import Image from "next/image"
+import { TemplateCanvas } from "@croct/template-ui/react"
+import { renderMarkdown } from "@/lib/markdown"
 
-export default function Home() {
+export default async function Home() {
+  // Usar conteúdo estático primeiro para testar se a página funciona
+  const content = {
+    instructions: [
+      "Comece editando `app/page.tsx`.",
+      "Salve e veja suas alterações instantaneamente."
+    ],
+    primaryButton: {
+      url: "https://vercel.com/new?utm_source=croct&utm_medium=default-template&utm_campaign=create-next-app",
+      label: "Deploy agora"
+    },
+    secondaryButton: {
+      url: "https://nextjs.org/docs?utm_source=croct&utm_medium=default-template&utm_campaign=create-next-app", 
+      label: "Leia nossa documentação"
+    }
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+    <TemplateCanvas
+      title="Starter Next.js 15"
+      ctaLabel="Editar este conteúdo"
+      ctaLink="https://app.croct.com/organizations/ipog-4216/workspaces/ipog/slots/edit/next15-homepage/1?utm_medium=cli&utm_source=template&utm_campaign=00000000.CO.DE.starter_next&utm_content=next_15&utm_term=tailwind"
+      ctaTarget="_blank"
+      fullScreen
+      isolated
+    >
+      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+          <Image
+            className="dark:invert"
+            src="/next.svg"
+            alt="Logo do Next.js"
+            width={180}
+            height={38}
+            priority
+          />
+          <ol className="list-inside space-y-2 list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+            {content.instructions.map((step, index) => (
+              <li key={index} className="mb-2 tracking-[-.01em]">
+                {renderMarkdown(step, {code: "bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono) font-semibold"})}
+              </li>
+            ))}
+          </ol>
+
+          <div className="flex gap-4 items-center flex-col sm:flex-row">
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+              href={content.primaryButton.url}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
+              <Image
+                className="dark:invert"
+                src="/vercel.svg"
+                alt="Logo do Vercel"
+                width={20}
+                height={20}
+              />
+              {content.primaryButton.label}
+            </a>
             <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+              href={content.secondaryButton.url}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+              {content.secondaryButton.label}
+            </a>
+          </div>
+        </main>
+        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://nextjs.org/learn?utm_source=croct&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
+              aria-hidden
+              src="/file.svg"
+              alt="Ícone de arquivo"
               width={16}
               height={16}
             />
-            Deploy Now
+            Aprender
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://vercel.com/templates?framework=next.js&utm_source=croct&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Documentation
+            <Image
+              aria-hidden
+              src="/window.svg"
+              alt="Ícone de janela"
+              width={16}
+              height={16}
+            />
+            Exemplos
           </a>
-        </div>
-      </main>
-    </div>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://nextjs.org?utm_source=croct&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/globe.svg"
+              alt="Ícone do globo"
+              width={16}
+              height={16}
+            />
+            Ir para nextjs.org →
+          </a>
+        </footer>
+      </div>
+    </TemplateCanvas>
   );
 }
