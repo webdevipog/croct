@@ -1,12 +1,12 @@
 {
   "next15-homepage": [
     {
-      "version": 1,
+      "version": 2,
       "content": {
         "pt-br": {
-          "_component": "next15-starter-page@1",
+          "_component": "next15-starter-page@3",
           "instructions": [
-            "Get started by editing `app/page.tsx`.",
+            "Teste Get started by editing `app/page.tsx`.",
             "Save and see your changes instantly."
           ],
           "primaryButton": {

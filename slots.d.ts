@@ -6,7 +6,12 @@
  * To regenerate, run `croct update`.
  */
 
-type Def$e5ac4cc5 = {
+/**
+ * Next.js 15 starter page
+ * 
+ * The structure for Next.js 15 starter pages.
+ */
+type Def$7f15019b = {
   /**
    * Instructions
    * 
@@ -54,12 +59,12 @@ type Def$e5ac4cc5 = {
 };
 
 declare module '@croct/plug/slot' {
-  type Next15HomepageV1 = Def$e5ac4cc5 & {'_component': 'next15-starter-page@1' | null};
+  type Next15HomepageV2 = Def$7f15019b & {'_component': 'next15-starter-page@3' | null};
   
   export interface VersionedSlotMap {
     'next15-homepage': {
-      latest: Next15HomepageV1,
-      '1': Next15HomepageV1,
+      latest: Next15HomepageV2,
+      '2': Next15HomepageV2,
     };
   }
 }
