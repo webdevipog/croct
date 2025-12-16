@@ -21,38 +21,74 @@
       }
     }
   ],
-  "sobre-empresa": [
+  "sobre-empresa1": [
     {
-      "version": 1,
+      "version": 2,
       "content": {
         "pt-br": {
-          "_component": "sobre-empresa-page@1",
-          "titulo": "Sobre Nossa Empresa",
-          "subtitulo": "Inovação e excelência em cada projeto",
-          "descricao": "Somos uma empresa dedicada a criar soluções tecnológicas inovadoras que transformam a maneira como as pessoas interagem com a tecnologia. Com uma equipe experiente e apaixonada por desafios, desenvolvemos produtos que fazem a diferença no mercado e na vida dos nossos clientes.",
-          "features": [
-            {
-              "titulo": "Inovação",
-              "descricao": "Sempre buscamos as tecnologias mais avançadas para criar soluções únicas",
-              "icone": "🚀"
+          "_component": "sobre-empresa-page1@1",
+          "titulo": "Titulo de teste",
+          "descricao": "descricao de teste",
+          "subtitulo": "subtitulo de teste"
+        }
+      }
+    }
+  ],
+  "lp-capacitacao-para-aplicadores-aba-ead": [
+    {
+      "version": 2,
+      "content": {
+        "pt-br": {
+          "_component": "lp-component@1",
+          "hero": {
+            "tag": "Curso 100% EaD",
+            "card": {
+              "color": "#ee3",
+              "title": "Investimento",
+              "ctaLabel": "INSCREVA-SE",
+              "fullPrice": {
+                "label": "à vista ou",
+                "value": 1490
+              },
+              "alternatePrice": {
+                "label": "sem juros",
+                "value": 372.5,
+                "installments": 4
+              }
             },
-            {
-              "titulo": "Qualidade", 
-              "descricao": "Nossos produtos passam por rigorosos testes de qualidade",
-              "icone": "✨"
-            },
-            {
-              "titulo": "Suporte",
-              "descricao": "Oferecemos suporte completo em todas as etapas do projeto",
-              "icone": "🤝"
-            }
-          ],
-          "chamadaAcao": {
-            "titulo": "Pronto para começar seu projeto?",
-            "botao": {
-              "texto": "Entre em Contato",
-              "url": "/contato"
-            }
+            "image": "https://cdn.croct.io/workspace/customer-assets/5bd959c2-ac79-4afa-b324-7c5faac6953e/66a61317-e1b0-408c-9cfe-4ab7002f115d",
+            "heading": "Capacitação para Aplicadores ABA",
+            "tagline": "Torne-se um aplicador ABA com certificação reconhecida e atuação imediata no mercado!",
+            "preTitle": "Curso de Extensão Universitária"
+          },
+          "highlights": {
+            "items": [
+              {
+                "text": "Atue com TEA e DI em escolas, clínicas e residências",
+                "image": "https://cdn.croct.io/workspace/customer-assets/5bd959c2-ac79-4afa-b324-7c5faac6953e/8b5d4797-acd6-400a-9edc-26f5e57b79e8"
+              },
+              {
+                "text": "Forme-se em apenas 2 meses",
+                "image": "https://cdn.croct.io/workspace/customer-assets/5bd959c2-ac79-4afa-b324-7c5faac6953e/1e8d2b12-1930-42aa-91a3-aa17118a71f5"
+              },
+              {
+                "text": "Estude em um curso validado pela ABPMC",
+                "image": "https://cdn.croct.io/workspace/customer-assets/5bd959c2-ac79-4afa-b324-7c5faac6953e/8b624cf3-97ef-4627-ae74-a9513d7ac027"
+              },
+              {
+                "text": "Tenha acesso à WayABA com desconto exclusivo",
+                "image": "https://cdn.croct.io/workspace/customer-assets/5bd959c2-ac79-4afa-b324-7c5faac6953e/5852147f-0655-40e0-ae80-8178c911e22d"
+              },
+              {
+                "text": "Prepare-se para a certificação CABA-BR",
+                "image": "https://cdn.croct.io/workspace/customer-assets/5bd959c2-ac79-4afa-b324-7c5faac6953e/061feb65-3284-4e4d-8ce1-90ca0bc73918"
+              },
+              {
+                "text": "Comece sem pré-requisitos",
+                "image": "https://cdn.croct.io/workspace/customer-assets/5bd959c2-ac79-4afa-b324-7c5faac6953e/d08aa125-4adf-47d9-8286-c16f5426053c"
+              }
+            ],
+            "title": "Diferenciais do IPOG para uma formação diferenciada:"
           }
         }
       }

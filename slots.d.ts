@@ -58,41 +58,163 @@ type Def$7f15019b = {
   },
 };
 
-/**
- * Sobre empresa page
- * 
- * The structure for about company pages.
- */
-type Def$sobre = {
+type Def$17532834 = {
+  /**
+   * titulo
+   */
   'titulo': string,
-  'subtitulo': string,
+  /**
+   * descricao
+   */
   'descricao': string,
-  'features': Array<{
-    'titulo': string,
-    'descricao': string,
-    'icone': string,
-  }>,
-  'chamadaAcao': {
-    'titulo': string,
-    'botao': {
-      'texto': string,
-      'url': string,
+  /**
+   * subtitulo
+   */
+  'subtitulo': string,
+};
+
+type Def$0db98ba2 = {
+  /**
+   * Hero
+   */
+  'hero': Def$770140b4,
+  /**
+   * Highlights
+   */
+  'highlights': Def$48850506,
+};
+
+type Def$0147aaec = string;
+
+/**
+ * Hero section with card
+ * 
+ * A big section featured at the top of a page.
+ */
+type Def$770140b4 = {
+  /**
+   * Tag
+   */
+  'tag'?: string,
+  /**
+   * Card
+   */
+  'card': {
+    /**
+     * Color
+     */
+    'color'?: string,
+    /**
+     * Title
+     */
+    'title'?: string,
+    /**
+     * CTA label
+     */
+    'ctaLabel': string,
+    /**
+     * Full price
+     */
+    'fullPrice': {
+      /**
+       * Label
+       */
+      'label'?: string,
+      /**
+       * Value
+       */
+      'value': number,
+    },
+    /**
+     * Alternate price
+     */
+    'alternatePrice': {
+      /**
+       * Label
+       */
+      'label': string,
+      /**
+       * Value
+       */
+      'value': number,
+      /**
+       * Installments
+       */
+      'installments': number,
     },
   },
+  /**
+   * Image
+   * 
+   * The image to display alongside the heading and tagline.
+   */
+  'image': Def$0147aaec,
+  /**
+   * Heading
+   * 
+   * The main heading of the page.
+   */
+  'heading': string,
+  /**
+   * Tagline
+   * 
+   * The tagline of the page.
+   */
+  'tagline': string,
+  /**
+   * Pre-title
+   */
+  'preTitle'?: string,
+};
+
+/**
+ * Items with image and text
+ * 
+ * A list of ordered items.
+ */
+type Def$48850506 = {
+  /**
+   * Items
+   */
+  'items': Array<{
+    /**
+     * Text
+     * 
+     * The title or description of the item.
+     */
+    'text': string,
+    /**
+     * Image
+     * 
+     * The image of the item.
+     */
+    'image': Def$0147aaec,
+  }>,
+  /**
+   * Title
+   */
+  'title'?: string,
 };
 
 declare module '@croct/plug/slot' {
   type Next15HomepageV2 = Def$7f15019b & {'_component': 'next15-starter-page@3' | null};
-  type SobreEmpresaV1 = Def$sobre & {'_component': 'sobre-empresa-page@1' | null};
+  type SobreEmpresa1V2 = Def$17532834 & {'_component': 'sobre-empresa-page1@1' | null};
+  type LpCapacitacaoParaAplicadoresAbaEadV2 = Def$0db98ba2 & {'_component': 'lp-component@1' | null};
   
   export interface VersionedSlotMap {
     'next15-homepage': {
       latest: Next15HomepageV2,
       '2': Next15HomepageV2,
     };
-    'sobre-empresa': {
-      latest: SobreEmpresaV1,
-      '1': SobreEmpresaV1,
+
+    'sobre-empresa1': {
+      latest: SobreEmpresa1V2,
+      '2': SobreEmpresa1V2,
+    };
+
+    'lp-capacitacao-para-aplicadores-aba-ead': {
+      latest: LpCapacitacaoParaAplicadoresAbaEadV2,
+      '2': LpCapacitacaoParaAplicadoresAbaEadV2,
     };
   }
 }

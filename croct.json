@@ -12,7 +12,9 @@
   "defaultLocale": "pt-br",
   "slots": {
     "next15-homepage": "2",
-    "sobre-empresa": "1"
+    "sobre-empresa": "1",
+    "sobre-empresa1": "2",
+    "lp-capacitacao-para-aplicadores-aba-ead": "2"
   },
   "components": {},
   "paths": {
