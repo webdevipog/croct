@@ -6,73 +6,6 @@
  * To regenerate, run `croct update`.
  */
 
-/**
- * Next.js 15 starter page
- * 
- * The structure for Next.js 15 starter pages.
- */
-type Def$7f15019b = {
-  /**
-   * Instructions
-   * 
-   * The steps to help users get started.
-   */
-  'instructions': Array<string>,
-  /**
-   * Primary button
-   * 
-   * The primary call-to-action button.
-   */
-  'primaryButton': {
-    /**
-     * URL
-     * 
-     * The link the button points to.
-     */
-    'url': string,
-    /**
-     * Label
-     * 
-     * The label shown on the button.
-     */
-    'label': string,
-  },
-  /**
-   * Secondary button
-   * 
-   * The secondary call-to-action button.
-   */
-  'secondaryButton': {
-    /**
-     * URL
-     * 
-     * The link the button points to.
-     */
-    'url': string,
-    /**
-     * Label
-     * 
-     * The label shown on the button.
-     */
-    'label': string,
-  },
-};
-
-type Def$17532834 = {
-  /**
-   * titulo
-   */
-  'titulo': string,
-  /**
-   * descricao
-   */
-  'descricao': string,
-  /**
-   * subtitulo
-   */
-  'subtitulo': string,
-};
-
 type Def$0db98ba2 = {
   /**
    * Hero
@@ -196,25 +129,38 @@ type Def$48850506 = {
   'title'?: string,
 };
 
+type Def$6365e50d = {
+  /**
+   * Imagem
+   */
+  'imagem': Def$0147aaec,
+  /**
+   * Título
+   */
+  'titulo': string,
+  /**
+   * ctaLabel
+   */
+  'ctalabel': string,
+  /**
+   * Descricao
+   */
+  'descricao': string,
+};
+
 declare module '@croct/plug/slot' {
-  type Next15HomepageV2 = Def$7f15019b & {'_component': 'next15-starter-page@3' | null};
-  type SobreEmpresa1V2 = Def$17532834 & {'_component': 'sobre-empresa-page1@1' | null};
   type LpCapacitacaoParaAplicadoresAbaEadV2 = Def$0db98ba2 & {'_component': 'lp-component@1' | null};
+  type LpTesteV1 = Def$6365e50d & {'_component': 'lp-hero@1' | null};
   
   export interface VersionedSlotMap {
-    'next15-homepage': {
-      latest: Next15HomepageV2,
-      '2': Next15HomepageV2,
-    };
-
-    'sobre-empresa1': {
-      latest: SobreEmpresa1V2,
-      '2': SobreEmpresa1V2,
-    };
-
     'lp-capacitacao-para-aplicadores-aba-ead': {
       latest: LpCapacitacaoParaAplicadoresAbaEadV2,
       '2': LpCapacitacaoParaAplicadoresAbaEadV2,
+    };
+
+    'lp-teste': {
+      latest: LpTesteV1,
+      '1': LpTesteV1,
     };
   }
 }

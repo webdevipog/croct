@@ -1,39 +1,4 @@
 {
-  "next15-homepage": [
-    {
-      "version": 2,
-      "content": {
-        "pt-br": {
-          "_component": "next15-starter-page@3",
-          "instructions": [
-            "Teste Get started by editing `app/page.tsx`.",
-            "Save and see your changes instantly."
-          ],
-          "primaryButton": {
-            "url": "https://vercel.com/new?utm_source=croct&utm_medium=default-template&utm_campaign=create-next-app",
-            "label": "Deploy now"
-          },
-          "secondaryButton": {
-            "url": "https://nextjs.org/docs?utm_source=croct&utm_medium=default-template&utm_campaign=create-next-app",
-            "label": "Read our docs"
-          }
-        }
-      }
-    }
-  ],
-  "sobre-empresa1": [
-    {
-      "version": 2,
-      "content": {
-        "pt-br": {
-          "_component": "sobre-empresa-page1@1",
-          "titulo": "Titulo de teste",
-          "descricao": "descricao de teste",
-          "subtitulo": "subtitulo de teste"
-        }
-      }
-    }
-  ],
   "lp-capacitacao-para-aplicadores-aba-ead": [
     {
       "version": 2,
@@ -90,6 +55,20 @@
             ],
             "title": "Diferenciais do IPOG para uma formação diferenciada:"
           }
+        }
+      }
+    }
+  ],
+  "lp-teste": [
+    {
+      "version": 1,
+      "content": {
+        "pt-br": {
+          "_component": "lp-hero@1",
+          "imagem": "https://cdn.croct.io/workspace/customer-assets/5bd959c2-ac79-4afa-b324-7c5faac6953e/327a76e3-c86f-4e15-b6c3-f4b2e886c9cd",
+          "titulo": "Titulo - CROCT",
+          "ctalabel": "https://ipog.edu.br",
+          "descricao": "descricao de teste - CROCT"
         }
       }
     }
